@@ -31,8 +31,10 @@ $ docker-compose down
 ```
 
 The application will be available at:
-- API: http://localhost:3000
-- Swagger Documentation: http://localhost:3000/api
+- **API Base URL**: `http://localhost:3000`
+- **Swagger Documentation**: `http://localhost:3000/api`
+
+The root endpoint `/` returns a "Hello World" message. All API endpoints listed below are relative to the base URL.
 
 ## Seeding the Database
 
@@ -46,19 +48,26 @@ $ yarn prisma:seed
 
 ## Running Tests
 
-To run the tests, you first need to have the database container running.
+### Unit Tests
+Unit tests do not require a database connection and can be run directly. They test individual components in isolation.
 
+```bash
+# Run unit tests
+$ yarn test
+```
+
+### Integration Tests
+Integration tests check how different parts of the application work together and require a running database.
+
+First, start the database container:
 ```bash
 # Start the database container
 $ docker-compose up -d db
 ```
 
-Now you can run the tests:
+Now you can run the integration tests:
 ```bash
-# Run all tests (unit and integration)
-$ yarn test
-
-# Run only integration tests
+# Run integration tests
 $ yarn test:integration
 ```
 
