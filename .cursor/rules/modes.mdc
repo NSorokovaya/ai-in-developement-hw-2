@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Development Modes
+
+## NestJS Development Mode
+Description: NestJS development mode with best practices
+
+### Architecture Rules
+- Follow NestJS architecture patterns:
+  * module
+  * controller
+  * service
+  * dto
+  * entity
+
+### Testing Rules
+- Write tests for all components:
+  * spec
+  * e2e-spec
+
+### Documentation Rules
+- Document all components:
+  * swagger
+  * readme
+  * api-docs
+
+### Shortcuts
+- Generate module: nest g module
+- Generate controller: nest g controller
+- Generate service: nest g service
+- Generate resource: nest g resource

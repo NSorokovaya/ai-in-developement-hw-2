@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Documentation Rules
+
+## README Requirements
+README should include:
+- Project description
+- Installation instructions
+- Usage guide
+- API documentation
+- Testing instructions
+- Deployment guide
+
+## API Documentation
+API documentation should include:
+- Swagger decorators
+- Endpoint descriptions
+- Request examples
+- Response examples
+- Error responses
+
+## Code Documentation
+Code documentation should include:
+- Class description
+- Method description
+- Parameter description
+- Return description
+- Example usage

@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# NestJS Project Rules
+
+## File Naming
+- Files must match pattern: ^[a-z][a-z0-9-]*\.(controller|service|module|dto|entity|guard|strategy)\.ts$
+- Classes must match pattern: ^[A-Z][a-zA-Z0-9]*(Controller|Service|Module|Dto|Entity|Guard|Strategy)$
+
+## Module Structure
+- Every module must have:
+  * controller.ts
+  * service.ts
+  * module.ts
+
+## DTO Structure
+- Every entity must have:
+  * create.dto.ts
+  * update.dto.ts
+
+## Testing
+- Minimum coverage: 80%
+- Required tests:
+  * Unit tests (*.spec.ts)
+  * E2E tests (*.e2e-spec.ts)
+
+## Documentation
+- Required docs:
+  * Swagger
+  * README.md
+  * API documentation

@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Test Rules
+
+## Unit Tests
+- File naming: ^[a-z][a-z0-9-]*\.spec\.ts$
+- Required structure:
+  * describe
+  * it
+  * expect
+- Minimum coverage: 80%
+
+## E2E Tests
+- File naming: ^[a-z][a-z0-9-]*\.e2e-spec\.ts$
+- Required structure:
+  * describe
+  * it
+  * expect
+  * beforeAll
+  * afterAll
+
+## Integration Tests
+- File naming: ^[a-z][a-z0-9-]*\.integration-spec\.ts$
+- Required structure:
+  * describe
+  * it
+  * expect
+  * beforeEach
+  * afterEach
